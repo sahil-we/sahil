@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style type="text/css">
+		body{
+			height: 2000px;
+
+		}
+		*{
+			box-sizing: border-box;
+			margin: 0px;
+		 //border: 2px solid black;
+		font-family: Roboto,sans-serif;
+		}
+		.navbar{
+			background-color: #813588;
+			//position: fixed;
+			width: 100%;
+			
+		}
+		.d1{
+		display: flex;
+		flex-wrap: wrap;
+		background-color: #813588;
+		margin-left:2%; 
+		width: 97%;
+
+		}
+		.d1 a{
+			 text-decoration: none;
+            color: #ffc846;
+            border: 1px solid #ffc846 ;
+            padding: 7px;
+            border-radius: 5px 10px;
+            margin: 2%;
+            transition: 0.5s;
+		}
+		.d1 a:hover{
+			background-color: #ffc846;
+			color: white;
+		}
+		
+		.d1 img{
+			height: 50px;
+            width: 150px;
+            margin: 1% 2% 0% 2%;
+			}
+		.d2{
+			background-image: url(https://cdn1.byjus.com/byjusweb/img/home/svg/homebannerbg.svg);
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #813588;
+		}
+		.img{
+			width: 100%;
+            height: 100%;
+            margin-top: 20%;
+		}
+		.img:hover{
+			transform: translate( 0px, -20px);
+		}
+		.imgdiv{
+			//border: 2px solid black;
+			width: 50%;
+			height: 70%;
+			margin: 0px 60px 0px 50px;
+			
+		}
+		.form{
+            background-color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            margin: 10% 20px 0px 50px ;
+            width: 30%;
+            height: 40%;
+            
+           }
+           .input{
+           margin-bottom: 15px;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid gray;
+            padding: 10px 15px ;
+        }
+        .input1{
+            margin-bottom: 25px;
+            width: 100%;
+            
+            border-radius: 3px;
+            border: 1px solid gray;
+            padding: 10px 5px ;
+            font-size: 150%;
+            color: white;
+            font-weight: bold;
+            background-image: linear-gradient(to right,#ff9234,#fc6274 100%);
+        }
+        .bodyimg{
+        	background-color: #f2f2f2;
+        	display: flex;
+        	flex-wrap: wrap;
+        	padding: 40px 30px;
+        	text-align: center;
+        	width: 76%;
+ 			font-size: 90%;
+        	margin-left: auto;
+        	margin-right: auto;
+        	border-radius: 10px;
+        	box-shadow: 0px 0px 1px purple;
+        	transition: 1s;
+        	//position: absolute;
+        	box-shadow: 2px 2px 19px gray;
+        }
+        .bodyud{
+        	background-image: linear-gradient(to right, skyblue, blue);
+        	position: absolute;
+        	padding: 15px 17px;
+        	border-radius: 0px 0px 10px 10px;
+        	color: white;
+        	left: 50%;
+        	top: 970px;
+        	z-index: 1;
+            }
+        .first1{
+        	display: flex;
+        	flex-wrap: wrap;
+        	width: 44%;
+        	padding-top: 20px;
+        	
+        	margin: 0px 2% 0% 4%; 
+        }
+        .first2{
+        	display: flex;
+        	flex-wrap: wrap;
+        	width: 44%;
+        	
+        	padding-top: 20px;
+        	margin: 0px 4% 0% 2%; 
+        
+        } 
+        .bodyimg1{
+        	width: 100%;
+        	height: 100%;
+
+        	
+        	}    
+
+        	.bodyimg11{
+        		width: 100%;
+        	height: 100%;
+        	}  
+        .logo1{
+        	height: 40px;
+        	width: 100px;
+        	
+        }
+        .logo{
+        	height: 30px;
+        	width: 80px;
+        }
+        .innerdiv11{
+        	
+        	width: 40%;
+        	height: 80%;
+        	
+        }
+        .innerdiv1{
+        	
+        	width: 40%;
+        	height: 90%;
+        	
+        }
+        .innerdiv3{
+        	width: 50%;
+        	height: 90%;
+        }
+        .logodiv111{
+        	width: 50%;
+        	height: 60%;
+        	
+        	font-size: 120%;
+        	padding-top: 20px;
+        	}
+        	.logodiv11{
+        	width: 50%;
+        	height: 60%;
+        	font-size: 110%;
+        	margin-left: 5%;
+        	
+        	}
+        .logodiv1{
+        	width: 50%;
+        	height: 60%;
+        	
+        	font-size: 120%;
+        	padding-top: 20px;
+        	
+        }
+        .logodiv12{
+        	width: 50%;
+        	height: 60%;
+        	margin-left: 2%;
+
+        	
+        }
+        .bodyimg2{
+        	height: 120px;
+        	width: 220px;
+        }
+        .bodyimg21{
+
+        }
+        .akashlogo{
+        	height: 130px;
+        	width: 150px;
+        }
+       .second1{
+       		width: 29%;
+        	padding-top: 20px;
+        	
+        	margin:0px 2% ; 
+       }
+         .second2{
+       		width: 29%;
+        	padding-top: 20px;
+        	
+        	margin: 0% 2%; 
+       }
+      
+       .bodyud1{
+        	background-image: linear-gradient(to right, skyblue, blue);
+        	position: absolute;
+        	padding: 15px 17px;
+        	border-radius: 0px 0px 10px 10px;
+        	color: white;
+        	left: 45%;
+        	top: 1340px;
+        	z-index: 1;
+            }
+            .bodyimg3{
+            	
+        	display: flex;
+        	flex-wrap: wrap;
+        	//padding: 40px 30px;
+        	text-align: center;
+        	width: 76%;
+        	margin-left: auto;
+        	margin-right: auto;
+        	
+        	
+        	
+            }
+            .third1{
+            	display: flex;
+        	flex-wrap: wrap;
+        	width:  47%;
+        	padding: 20px;
+        	
+        	margin: 0px 1% 0px 2%; 
+        	background-color: #f2f2f2;
+        	border-radius: 10px;
+        	box-shadow: 2px 2px 19px gray;
+      }
+      .third2{
+      	display: flex;
+      	border-radius: 10px;
+        	flex-wrap: wrap;
+        	width: 47%;
+        	//border: 1px solid red;
+        	background-color: #f2f2f2;
+        padding:  20px;
+        	margin: 0px 1% 0px 2%;
+        	box-shadow: 2px 2px 19px gray;
+      }
+      	.bodyimg4{
+      		width: 75%;
+      		margin: 0px auto;
+      		display: flex;
+      		flex-wrap: wrap;
+      		//border: 1px solid red;
+      		
+      	}
+      	.img5{
+      		margin-left: 5%;
+      		height:25%;
+      		width: 25% 
+      	}
+      	.img5 img{
+      		height: 100%;
+      		width: 100%;
+      	}
+      	.img5 p{
+      		font-size: 150%;
+      		text-align: center;
+      	}
+      	.bodyimg31{
+      	width: 100%;
+      		height: 80%;
+      	}
+      	.bodyimg32{
+      		width: 100%;
+      		height: 100%;
+      	}
+      	.bodyimg5{
+      		width: 76%;
+      		margin: 0px auto;
+      		display: flex;
+      		flex-wrap: wrap;
+      		margin: 0px auto;
+      		
+
+      	
+      	}
+      	.img6{
+      		margin-left: 5%;
+      		padding: 10px 30px;
+      		box-shadow: 2px 2px 19px gray;
+      		text-align: center;
+      		border-radius: 20px; 
+      		width: 20%;
+      		height: 20%;
+      		font-size: 95%;
+      	
+      	}
+      	.img6 img{
+      		height: 40%;
+      		width: 40%;
+      		margin-left: auto ;
+      		margin-right: auto;
+
+      	}
+      	.img6 h1{
+      		color: purple;
+      	}
+      	.img7 img{
+      		height: 35%;
+      		width: 35%;
+      		margin-left: auto ;
+      		margin-right: auto;
+      	}
+      	.img7{
+      		margin-left: 2%;
+      		
+      		width: 31%;
+      		height: 50%;
+      		text-align: center;
+
+      	}
+      	.link2{
+      		text-decoration: none;
+      		color: white;
+      		font-weight: bold;
+
+      		padding: 1% 1%;
+      		font-size: 100%;
+      		border-radius: 30px;
+      		background-image: linear-gradient(to right, purple,blue);
+      	}
+      	.treeimg img{
+      		height: 100px;
+      		width: 350px;
+      	}
+      	.treeimg p{
+      		font-size: 150%;
+      		font-weight: bold;
+      		//letter-spacing: 1px;
+      	}
+      	.link3{
+      		text-decoration: none;
+      		background-image: linear-gradient(to right,#ff9234,#fc6274 100%);
+      		padding: 15px 25px;
+      		font-size: 130%;
+      		border-radius: 15px;
+      		color: white;	
+      		transition: 1s;
+      	}
+      	.firsth{
+      		width: 90%;
+      		margin-right: auto;
+      		margin-left: auto;
+      	}
+      	
+      	.childpic img{
+      		height: 50px;
+      		width: 150px
+      	}
+      	.footer{
+      		background-color: #813588;
+      		
+      		display: flex;
+      		flex-wrap: wrap;
+      	}
+      	.footer div{
+      		margin-left: 15%;
+      		margin-top: 2%;
+      	}
+      	.footer h3{
+      		color: #ffc846;
+      	}
+      	.linkdwiv{
+      		width: 60%;
+      		margin-left: auto;
+      		margin-right: auto;
+      	}
+      	.footer a{
+      		text-decoration: none;
+      		color: white;
+      		
+      		padding: 10px;
+      		display: block;
+      		font-size: 90%;
+
+      	}
+/*      	here are all hover effect*/
+
+.link3{
+      		transform: scale(8);
+      	}
+ a{
+       	transition: 0.5s;
+       }
+       a:hover{
+       	transform: scale(1.1);
+       }
+       img{
+       	transition: 0.5s;
+       }
+       img:hover{
+       	transform: scale(1.1);
+       }
+       h3{
+       	transition: 0.5s;
+
+       }
+       h3:hover{
+       transform: scale(1.1);
+       }
+       p{
+       	transition: 0.5s;
+       }
+        h1{
+       	transition: 0.5s;
+
+       }
+       h1:hover{
+       transform: scale(1.1);
+       }
+       p:hover{
+       	transform: scale(1.1);
+       }
+       input{
+       	transition: 0.5s;
+       }
+       input:hover{
+       	 background-color: lightgray;
+       }
+
+       @media screen and (max-width: 948px){
+       	.imgdiv{
+       		width: 65%;
+       	margin-top: 20px;
+       		margin-left: auto;
+       		margin-right: auto;
+       	}
+       	.form{
+       		width: 100%;
+       	}
+       	.first1{
+       		width: 100%;
+       	}
+       	.first2{
+       		width: 100%;
+       		margin-top: 10%;
+       	}
+       	.bodyimg{
+       		width: 95%;
+       	}
+       	.bodyimg3{
+       		width: 95%;
+       	}
+       	.second1{
+       		width: 100%
+
+       	}
+       	.form{
+       		margin-bottom: 4%;
+       		margin-left: 2%;
+       		margin-right: 2%;
+       	}
+       	.second2{
+       		width: 100%;
+       		margin-top: 10%;
+       	}
+       	.third1{
+       		width: 100%;
+       		margin-top: 15%;
+       		
+       		padding: 5%;
+       	}
+       	.bodyimg31{
+       			width: 100%;
+       			height: 100%;
+       	}
+       	
+       	
+       	.third2{
+       		width: 100%;
+       		margin-top: 15%;
+       		padding: 10%;
+
+       	}
+       	.img5 {
+       		width: 60%;
+       		margin-left: auto;
+       		margin-right: auto;
+       	}
+       	.img6{
+       		width: 60%;
+       		margin-left: auto; ;
+       		margin-right: auto;
+       		margin-top: 10%;
+       		
+       	}
+       	.img7{
+       		width: 100%;
+       		margin-left: auto;
+       		margin-right: auto;
+       		margin-top: 20%;
+       	}
+       	.link2{
+       		font-size: 90%;
+       		padding: 5px 5px;
+       	}
+       }
+      	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="d1">
+			<img src="LOGO.png" alt="">
+        <a class="link1" href="">Study Material</a>
+        <a href="">BYJU'S Answer</a>
+        <a href="">Scholarship</a>
+        <a href="">BTC</a>
+        <a href="">Buy a Course</a>
+        <a href="">Success Stories</a>
+        <a class="lastlink" href="">Login</a>
+		</div>
+	</div>
+	
+
+	<div class="d2">
+		<div class="imgdiv">
+        <img class="img"  src="Sharukh-min.png" alt="">
+    </div>
+        <div class="form">
+            <center> <h2>Book your Free Class
+                </h2>
+                <p>Learn from India's best teachers</p>
+                </center>
+            <hr>
+               
+                <form action="Zomato.html">
+                    <input type="text" class="input" placeholder="Enter Name of your child" required=""><br>
+                    <input type="number" class="input" placeholder="Enter your Mobile Number" required=""><br>
+                    <input type="email" class="input" placeholder="Enter your Emial" required> <br>
+                  <select class="input" value="State" >
+                    <option>Haryana</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>UP</option>
+                    <option>Bihar</option>
+                    <option>Maharastra</option>
+                    <option>Gujrat</option>
+                    <option>MP</option>
+                    <option>Assam</option>
+                    <option>Himachal</option>
+                    <option>Kerla</option>
+                  </select><br>
+                     <input class="input1" type="submit" value="Schedule a Free Class"></input></center>
+                </form>
+            <center>
+         
+        </div>
+	</div>
+	<br><br>
+	<div class="firsth">
+		<center>
+        <h2>Comprehensive learning programs<br>
+            & classes for all students</h2>
+            <p>Become lifelong learners with India's best teachers,<br>
+            engaging video lessons and personalised learning journeys</p>
+            </center><br>
+	</div><br>
+
+	<div class="bodyimg">
+		
+		<div class="first1">
+			<div class="innerdiv1">
+				 <img class="bodyimg1" src="https://cdn1.byjus.com/wp-content/uploads/2022/04/btla.png" alt="">
+			</div>
+			<div class="logodiv12">
+				<img class="logo" src="https://cdn1.byjus.com/byjusweb/img/home/svg/byjus_learningapp_logo.svg" alt="">
+                  <h3>Personalised learning app<br>
+                    to learn anytime, anywhere</h3><br>
+                    <p>Know more ></p>
+			</div>
+		</div>
+
+		<div class="first2">
+			<div class="innerdiv11">
+				 <img class="bodyimg11" src="https://cdn1.byjus.com/wp-content/uploads/2022/04/byjus-classes-tutor-img.png" alt="">
+			</div>
+			<div class="logodiv11">
+				 <img class="logo1" src="https://cdn1.byjus.com/byjusweb/img/home/image/byjus_classes_2_line_logo.png" alt="">
+               <h3> Personalised online tutoring<br>
+program with a unique two<br>
+teacher model</h3><br>
+<p>Know more ></p>
+			</div>
+		</div>
+		
+	</div>
+	<br><br>
+	<div class="bodyimg">
+		
+		<div class="second1">
+			
+				 <img class="bodyimg2" src="https://cdn1.byjus.com/wp-content/uploads/2022/04/jeeTeaching.png" alt="">			
+                  <p>Comprehensive learning program for JEE preparation</p>
+			
+		</div>
+		<div class="second2">
+			<img class="akashlogo" src="https://cdn1.byjus.com/byjusweb/img/home/image/Akash.png">
+		</div>
+
+		<div class="second2">
+			
+				 <img class="bodyimg2" src="https://cdn1.byjus.com/wp-content/uploads/2022/04/neet_teaching_web.png" alt="">
+               <p> Comprehensive learning program for NEET aspirants</p>
+			
+		</div>
+		
+	</div><br><br>
+	<div class="bodyimg3">
+		<!-- <div class="bodyud3"><p>Classes 4 - 10</p></div> -->
+		<div class="third1">
+			<div class="innerdiv3">
+				 <img class="bodyimg31" src="https://cdn1.byjus.com/wp-content/uploads/2022/04/dbel.png" alt="">
+			</div>
+			<div class="logodiv1">
+				<img class="logo" src="https://cdn1.byjus.com/byjusweb/img/home/svg/byjus_disney_logo.svg" alt="">
+                  <p>Specially crafted<br>
+early learning program<br>
+for young minds</p>
+			</div>
+		</div>
+
+		<div class="third2">
+			<div class="innerdiv3">
+				 <img class="bodyimg32" src="https://cdn1.byjus.com/wp-content/uploads/2022/04/IAS.png" alt="">
+			</div>
+			<div class="logodiv111">
+				 <img class="logo1" src="https://cdn1.byjus.com/byjusweb/img/home/svg/bj-ias-icon.svg" alt="">
+               <p>Personalised learning program<br>
+for the leaders of tomorrow</p>
+			</div>
+		</div>
+	</div><br><br><br>
+		
+		<div class="firsth">
+		<center>
+        <h1>Get the BYJU'S advantage</h1></center>
+            
+	</div><br>
+	<div class="bodyimg4">
+		<div class="img5">
+			<img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/concept-clarity.png">
+			<p>Conceptual clarity<br>
+through visualisation</p>
+		</div>
+		<div class="img5">
+			<img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/personalised-learning.png">
+			<p>Personalised learning<br>
+programs</p>
+		</div>
+		<div class="img5">
+			<img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/unmatched-attention.png">
+			<p>Unmatched individual<br>
+attention</p>
+		</div>
+		
+	</div><br><br><br><br>
+	<div class="firsth"><center>
+		<h1>Our students and parents love us</h1>
+	</center></div><br>
+	<div class="bodyimg5">
+		<div class="img6">
+			<img src="https://cdn1.byjus.com/byjusweb/img/home/svg/ic_downloads.svg">
+			<h1>150+ Million
+</h1><p>
+downloads</p>
+		</div>
+			
+		<div class="img6">
+			<img src="https://cdn1.byjus.com/byjusweb/img/home/svg/ic-app%20rating.svg">
+			<h1>4.7+ Star</h1><p>app rating</p>
+		</div>
+		<div class="img6">
+			<img src="https://cdn1.byjus.com/byjusweb/img/home/svg/ic-cities.svg">
+			<h1>1701+ Cities</h1><p>worldwide</p>
+		</div>
+		<div class="img6">
+			<img src="https://cdn1.byjus.com/byjusweb/img/home/svg/ic-time.svg">
+					<h1>
+71 mins avg.</h1><p>time spent daily</p>
+		</div>
+	</div><br><br>
+<div class="bodyimg4">
+		<div class="img7">
+			<img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/Devananda.png">
+			<p>Conceptual clarity<br>
+through visualisation</p>
+		</div>
+		<div class="img7">
+			<img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/Souradip.png">
+			<p>Personalised learning<br>
+programs</p>
+		</div>
+		<div class="img7">
+			<img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/suraj-peela.png">
+			<p>Unmatched individual<br>
+attention</p>
+		</div>
+	</div><br><br><br><br><br>
+		<div class="linkdiv"><center><a class="link2" href="">1000s of reviews by happy students --></a></center></div><br><br><br><br><br><br>
+		<div class="treeimg">
+			<center><img src="https://cdn1.byjus.com/byjusweb/img/home/image/the-learning-tree.jpg"><br><br>
+			<div class="firsth">	<p>A student's go-to blog for the latest stories,<br>
+discoveries, fun activities, exam tips, and more.
+</p></div></center>
+		</div><br><br>
+		<div class="childpic"><center><a class="link3" href="">Explore All</a><br><br><br><img src="https://www.kidsafeseal.com/sealimage/1356666662988262259/byjus_india_svg_darktm.svg"></center></div><br><br><br>
+		<div class="footer">
+			<div>
+				<h3>COURSES</h3>
+				<a href="">CBSE</a>
+				<a href="">ICSE</a>
+				<a href="">CAT</a>
+				<a href="">IAS</a>
+				<a href="">JEE</a>
+				<a href="">NEET</a>
+				<a href="">Commerce</a>
+				<a href="">JEE Main</a>
+				<a href="">NCERT</a>
+				<a href="">JEE Advanced</a>
+				<a href="">UPSC Prelims 2022 Question<br> Paper</a>
+				<a href="">UPSC Prelims 2022 Answer <br>Key</a>
+				<a href="">IAS Coaching</a>
+				<a href="">CBSE Sample Papers</a>
+				<a href="">CBSE Question Papers</a>
+			
+			</div>
+			<div>
+				<h3>EXAMS</h3>
+				<a href="">CAT Exam</a>
+				<a href="">CAT</a>
+				<a href="">GATE Exam</a>
+				<a href="">IAS Exam</a>
+				<a href="">UPSC Exam</a>
+				<a href="">UPSC Syllabus</a>
+				<a href="">UPSC 2023</a>
+				<a href="">Bank Exam</a>
+				<a href="">Government Exams</a>
+				<a href="">Education News</a>
+
+			</div>
+			<div>
+				<h3>EXAM PREPARATION</h3>
+				<a href="">Free CAT Prep</a>
+				<a href="">Free IAS Prep</a>
+				<a href="">Maths</a>
+				<a href="">Physics</a>
+				<a href="">Chemistry</a>
+				<a href="">Biology</a>
+				<a href="">JEE 2023</a>
+				<a href="">JEE Main Mock Test</a>
+				<a href="">JEE Main 2023 Question<br> Papers with Answers</a>
+				<a href="">JEE Main 2022 Question <br>Papers with Answers</a>
+				<a href="">JEE Advanced 2022 Question <br> Paper with Answers</a>
+				<a href="">BYJU'S Exam Prep</a>
+			</div>
+			
+		</div>
+</body>
+</html>
